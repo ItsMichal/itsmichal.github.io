@@ -12,8 +12,9 @@
 <body>
   <!--Main Navigation-->
   <header class="container">
-    <nav class="navbar navbar-secondary navbar-expand-lg">
-      <a class="navbar-brand" href="#">Michal Bodzianowski</a>
+    <!-- Taken from Bootstrap docs and modified -->
+    <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-bg navbar-expand-lg">
+      <a class="navbar-brand" href="#">Michal.us</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clubs">Clubs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
         </ul>
       </div>
     </nav>
@@ -31,6 +36,17 @@
       <p class="display-4 head-text">Innovating Interactions and Connections With Technology</p>
       <img class="d-lg-none img-fluid" alt="Michal Bodzianowski" src="assets/img/me.png">
     </div>
+    <hr>
+    <div class="container text-center">
+      <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i> GitHub</a>
+      <a class="btn btn-link" target="_blank" href="http://linkedin.com/in/mbodzianowski/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i> Soundcloud</a>
+      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i> Twitter</a>
+      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a class="btn btn-link" target="_blank" href="https://twitch.tv/ItsMichal"><i class="fab fa-twitch"></i> Twitch</a>
+      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i> me@michal.us</a>
+    </div>
+    <hr>
   </header>
   <!--Main Navigation-->
 
@@ -39,7 +55,7 @@
 
     <div class="container-xl">
       <div class="row">
-        <h1 class="col-sm-2">About</h1>
+        <h1 id="about" class="col-sm-2">About</h1>
         <div class="col-sm lead" style="font-size: 1.5em;">
 
           Hi, I'm Michal Bodzianowski! I'm an aspiring creative developer and leader, double majoring in Computer
@@ -51,7 +67,7 @@
       </div>
       <hr>
       <div class="row">
-        <h1 class="col-sm-2">Resume</h1>
+        <h1 id="resume" class="col-sm-2">Resume</h1>
         <div class="col align-items-center text-center">
           <a class="btn btn-large btn-lg  btn-primary" style="width: 40%;" href="resume.html">HTML Resume</a>
           <a class="btn btn-large btn-lg btn-primary" style="width: 40%;" href="assets/pdf/resume.pdf">PDF Resume</a>
@@ -59,7 +75,7 @@
       </div>
       <hr>
       <div class="row">
-        <h1 class="col-sm-2">Projects</h1>
+        <h1 id="projects" class="col-sm-2">Projects</h1>
 
         <div class="col-sm">
           <div class="card bg-dark align-items-center text-center">
@@ -67,11 +83,8 @@
               <source src="assets/media/map.mp4" type="video/mp4" />
             </video>
             <div class="card-body">
-              <h5 class="card-title">SHINE Lab - Maps Expirement</h5>
-              <p class="card-text">A Place to Connect. A Place to Express
-                A web application used to connect with people through small messages in a bottle. Throw your thoughts
-                out to sea, and let someone read them and get connected with you. A novel way of mixing meditation,
-                writing, and connection.</p>
+              <h5 class="card-title">SHINE Lab - Maps Expirement <small>2020-Present</small></h5>
+              <p class="card-text">Working on experiments that involve optimizing and easing the processes of human-computer interaction and the psychology behind it. Using python, flask, folium, websockets, AWS (DynamoDB and S3), and Heroku to develop a web-based experiment involving real-time communication and collaboration. Responsible for working with experiment designers to create a functional and useful testbed according to specifications.</p>
 
             </div>
           </div>
@@ -82,7 +95,7 @@
           <div class="card bg-dark align-items-center text-center">
             <img src="assets/img/sot.png" class="card-img-top" style="width: 16em" alt="Sea of Thoughts">
             <div class="card-body">
-              <h5 class="card-title">HackMIT 2020 - Sea of Thoughts</h5>
+              <h5 class="card-title">HackMIT 2020 - Sea of Thoughts <small>2020</small></h5>
               <p class="card-text">A Place to Connect. A Place to Express
                 A web application used to connect with people through small messages in a bottle. Throw your thoughts
                 out to sea, and let someone read them and get connected with you. A novel way of mixing meditation,
@@ -100,13 +113,32 @@
           <div class="card bg-dark align-items-center text-center">
             <img src="assets/img/dd.png" class="card-img-top" style="width: 60%; padding: 10px" alt="Sea of Thoughts">
             <div class="card-body">
-              <h5 class="card-title">HackCU 2020 - Doki Doki CU Story</h5>
+              <h5 class="card-title">HackCU 2020 - Doki Doki CU Story <small>2020</small></h5>
               <p class="card-text">
                 A visual novel/game built in Unity that memed CU Boulder. Amusing project with 3 other rookie hackers
                 for our school's annual hackathon.
               </p>
               <a class="btn btn-primary" href="https://devpost.com/software/doki-doki-cu-story-e8nz37">Project
                 Page</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-sm">
+          <div class="card bg-dark align-items-center text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" 
+              src="https://www.youtube.com/embed/qVEDjNc5Gmg?list=PLUtLZU4pik-OClTpNNyMUl1s4aB2DWvuY?rel=0"
+              allowfullscreen></iframe>
+            </div>
+           
+            <div class="card-body">
+              <h5 class="card-title">Special Force 1 & 2<small>2019</small></h5>
+              <p class="card-text">
+                A satirical series of short films edited and filmed by me, including some friends for college. Logos made in Illustrator and Photoshop. Video edited in Premiere. Title theme (from part 2) written in Ableton Live. A fun project, not to be taken TOO seriously ;)
+              </p>
             </div>
           </div>
         </div>
@@ -120,23 +152,25 @@
             </div>
            
             <div class="card-body">
-              <h5 class="card-title">The kAIser</h5>
+              <h5 class="card-title">The kAIser <small>2017</small></h5>
               <p class="card-text">
                 The kAIser is an ongoing project which aims to create physical emulations of WW1-era historical
                 leaders, using technologies like Artificial Intelligence, to help students understand their personas
                 better.
               </p>
-              <a class="btn btn-primary" href="https://github.com/ItsMichal/pilsudski"  target="_blank">Github Repo</a>
+              <a class="btn btn-primary" href="https://github.com/ItsMichal/pilsudski"  target="_blank">Github</a>
               <a class="btn btn-primary"  target="_blank"
                 href="https://www.denverpost.com/2017/02/21/highlands-ranch-history-class-artificial-intelligence/">Denver
                 Post Link</a>
             </div>
           </div>
         </div>
+
       </div>
+      
       <hr>
       <div class="row">
-        <h1 class="col-sm-2">Clubs</h1>
+        <h1 id="clubs" class="col-sm-2">Clubs</h1>
         <div class="col-sm">
           <div class="card bg-dark align-items-center text-center">
             <div class="embed-responsive embed-responsive-16by9">
@@ -176,7 +210,7 @@
       </div>
       <hr>
       <div class="row">
-        <h1 class="col-sm-2">Photos</h1>
+        <h1 id="photos" class="col-sm-2">Photos</h1>
         <div class="col-sm">
           <div class="card bg-dark align-items-center text-center">
             <img src="assets/img/fnl.jpg" class="card-img-top" alt="Sea of Thoughts">
@@ -235,12 +269,12 @@
     <div class="container-fluid text-center">
       <p>Thank you for viewing my portfolio! Visit my other pages here.</p>
       <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i> GitHub</a>
-      <a class="btn btn-link" href="http://linkedin.com/m/mbodzianowski"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-      <a class="btn btn-link" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i> Soundcloud</a>
-      <a class="btn btn-link" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i> Twitter</a>
-      <a class="btn btn-link" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i> Instagram</a>
-      <a class="btn btn-link" href="https://twitch.tv/ItsMichal"><i class="fab fa-twitch"></i> Twitch</a>
-      <a class="btn btn-link" href="mailto:me@michal.us"><i class="far fa-envelope"></i> me@michal.us</a>
+      <a class="btn btn-link" target="_blank" href="http://linkedin.com/m/mbodzianowski"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i> Soundcloud</a>
+      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i> Twitter</a>
+      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a class="btn btn-link" target="_blank" href="https://twitch.tv/ItsMichal"><i class="fab fa-twitch"></i> Twitch</a>
+      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i> me@michal.us</a>
 
 
     </div>

@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/starter.css" />
-    <title>Bootstrap npm starter</title>
+    <title>Michal Bodzianowski</title>
   </head>
   <body>
     <!--Main Navigation-->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Michal Bodzianowski</a>
+    <header class="container">
+      <!-- Taken from Bootstrap docs and modified -->
+      <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-bg">
+        <a class="navbar-brand" href="/">Michal.us</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -25,8 +26,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="/index.html">Landing Page</a></li>
-            <li class="nav-item active"><a class="nav-link" href="/resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#clubs">Clubs</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#photos">Photos</a></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +46,7 @@
 
     <!--Main layout-->
     <main>
-      <div class="container-fluid">
+      <div class="container">
         <h1> Resume </h1>
         <div class="c28">
           <div>

@@ -26,8 +26,11 @@ $border-radius: .4rem;
 $jumbotron-bg: #516586;
 $theme-colors: (
   "primary":#B5FFE1,
-  "dark":#516586
+  "dark":#516586,
+  "bg":  #465775
 );
+$navbar-dark-color: #F9E7E7;
+$navbar-dark-brand-color: #F9E7E7;
 //
 // Bring in Bootstrap
 //
