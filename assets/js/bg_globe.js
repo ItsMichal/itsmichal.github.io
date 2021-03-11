@@ -38,7 +38,7 @@ function init(points){
         requestAnimationFrame( animate );
         globe.rotation.x += 0.0001;
         globe.rotation.y += 0.001;
-        globe_lines.rotation.x -= 0.0001;
+        globe_lines.rotation.x += 0.000001;
         globe_lines.rotation.y -= 0.0001;
         if (camera.rotation.x > 0){
             camera.rotation.x -= 0.01*camera.rotation.x;
@@ -52,10 +52,14 @@ function init(points){
 
 
 
-
-var globe_map = THREE.ImageUtils.loadTexture('assets/img/earth.jpg');
+const loader = new THREE.TextureLoader();
+var globe_map;
 window.fetch("../assets/js/points.json")
 .then(response => response.json())
   .then(data => {
-    init(data.points);
+    loader.load('assets/img/earth.jpg', (texture)=>{
+        globe_map = texture;
+        init(data.points);
+    });
+    
   });
