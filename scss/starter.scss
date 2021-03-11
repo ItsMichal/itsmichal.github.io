@@ -10,27 +10,45 @@
 // `body { color: red; }`.
 
 
+@use "sass:map";
 //
 // Override Bootstrap here
 //
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 // Toggle global options
-$enable-gradients: true;
+$enable-gradients: false;
 $enable-shadows: true;
 $enable-responsive-font-sizes: true;
 
 // Customize some defaults
-$body-color: #F9E7E7;
-$body-bg: #465775;
+ // $body-color: #F9E7E7; //OLD
+// $body-color: #465775;
+ // $body-bg: #465775; //OLD
+// $body-bg: #F9E7E7; 
 $border-radius: .4rem;
-$jumbotron-bg: #516586;
+//$jumbotron-bg: #516586; //OLD
+
+// $theme-colors: (
+//   "primary":#B5FFE1,
+//   "dark":#516586,
+//   "bg":  #465775
+// ); //OLD
+$font-family-sans-serif: "Jost", sans-serif;
+
 $theme-colors: (
-  "primary":#B5FFE1,
-  "dark":#516586,
-  "bg":  #465775
+  "primary":#2274A5,
+  "secondary": #E6AF2E,
+  "dark":#00171F,
+  "light": #B8DBD9,
+  "bg":  #FCFCFC//#f7eeee//#F4F4F9
 );
-$navbar-dark-color: #F9E7E7;
-$navbar-dark-brand-color: #F9E7E7;
+$navbar-dark-color: map-get($theme-colors, "dark");
+$navbar-dark-brand-color: map-get($theme-colors, "dark");
+$jumbotron-bg: map-get($theme-colors, "bg");
+$body-bg: map-get($theme-colors, "bg");
+
 //test?
 //
 // Bring in Bootstrap
@@ -124,4 +142,28 @@ $navbar-dark-brand-color: #F9E7E7;
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#globe {
+  width: 100%;
+  height: 50vh;
+  // display: block;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: -9999;
+  // background-color: #F9E7E7;
+}
+
+.navbar {
+  background-color: map-get($theme-colors, "bg");
+}
+
+.btn-link {
+  text-decoration: none;
+  color: map-get($theme-colors, "secondary");
+}
+
+hr {
+  color: map-get($theme-colors, "primary");
 }

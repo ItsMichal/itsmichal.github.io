@@ -7,19 +7,28 @@
   <link rel="stylesheet" href="assets/css/starter.css">
   <title>Michal Bodzianowski</title>
   <script src="https://kit.fontawesome.com/0695532730.js" crossorigin="anonymous"></script>
+  <!-- <script src="assets/js/encom-globe.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/grid.js"></script> -->
+  <script src="assets/js/three.js"></script>
+
+
+
 </head>
 
 <body>
+  
+
   <!--Main Navigation-->
   <header class="container">
     <!-- Taken from Bootstrap docs and modified -->
-    <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-bg navbar-expand-lg">
+    <nav class="px-4 navbar sticky-top navbar-expand-lg  navbar-dark  navbar-expand-lg">
       <a class="navbar-brand" href="#">Michal.us</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
@@ -31,7 +40,11 @@
         </ul>
       </div>
     </nav>
-    <div class="jumbotron text-wrap header-jumbotron">
+
+    <!-- Globe BG -->
+    <div id="globe"></div>
+
+    <div class="p-5 text-wrap header-jumbotron">
       <h1 class="display-1 b"><b>Michal Bodzianowski</b></h1>
       <p class="display-4 head-text">Innovating Interactions and Connections With Technology</p>
       <img class="d-lg-none img-fluid" alt="Michal Bodzianowski" src="assets/img/me.png">
@@ -78,7 +91,7 @@
         <h1 id="projects" class="col-sm-2">Projects</h1>
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <video class="video-fluid card-img-top" autoplay loop muted>
               <source src="assets/media/map.mp4" type="video/mp4" />
             </video>
@@ -92,7 +105,7 @@
 
         <!-- Sea of Thoughts -->
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/sot.png" class="card-img-top" style="width: 16em" alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">HackMIT 2020 - Sea of Thoughts <small>2020</small></h5>
@@ -111,7 +124,7 @@
 
         <!-- Doki Doki CU Story -->
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/taco.png" class="card-img-top" alt="Doki Doki CU Story">
             <div class="card-body">
               <h5 class="card-title">TacoNeko - GB Studio Game <small>2020</small></h5>
@@ -127,7 +140,7 @@
 
         <!-- Doki Doki CU Story -->
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/dd.png" class="card-img-top" style="padding-top: 10px; width: 24em" alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">HackCU 2020 - Doki Doki CU Story <small>2020</small></h5>
@@ -148,7 +161,7 @@
         <div class="col-sm-2"></div>
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/ohisee.png" class="card-img-top"  alt="OhISee">
            
             <div class="card-body">
@@ -170,8 +183,8 @@
         
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
-            <div class="embed-responsive embed-responsive-16by9">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
               <iframe class="embed-responsive-item" 
               src="https://www.youtube.com/embed/qVEDjNc5Gmg?list=PLUtLZU4pik-OClTpNNyMUl1s4aB2DWvuY?rel=0"
               allowfullscreen></iframe>
@@ -190,8 +203,8 @@
         <div class="col-sm-2"></div>
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
-            <div class="embed-responsive embed-responsive-16by9">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
               <iframe class="embed-responsive-item" 
               src="https://www.youtube.com/embed/VvHQItjiEzs?list=PLAzDHex22XQw1PDdFq6Iz-STj1VsJHldi?rel=0"
               allowfullscreen></iframe>
@@ -210,8 +223,8 @@
         </div>
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
-            <div class="embed-responsive embed-responsive-16by9">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
               <iframe class="embed-responsive-item" 
               src="https://www.youtube.com/embed/Pz79cKIJQhA?rel=0"
               allowfullscreen></iframe>
@@ -237,9 +250,31 @@
       <hr>
       <div class="row">
         <h1 id="clubs" class="col-sm-2">Clubs</h1>
+        
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
-            <div class="embed-responsive embed-responsive-16by9">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
+              <iframe class="embed-responsive-item" 
+              src="https://www.youtube.com/embed/Cz48VC3mCtA?rel=0"
+              allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Blueprint Boulder - Vice President of Technology</h5>
+              <p class="card-text">Member of the VALORANT Gold Team, competing against other colleges in the competitive shooter developed by Riot Games.</p>
+              <a class="btn btn-primary" target="_blank"
+              href="https://cslesports.gg/player/71187">CSL Open League Profile</a>
+              <a class="btn btn-primary" target="_blank"
+              href="https://cugaming.gg/">CU Gaming/Esports</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-100"><br></div>
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
               <iframe class="embed-responsive-item" 
               src="https://www.youtube.com/embed/Eb0MtCTRKBI?rel=0"
               allowfullscreen></iframe>
@@ -256,10 +291,10 @@
         </div>
 
 
-
+        
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
-            <div class="embed-responsive embed-responsive-16by9">
+          <div class="card bg-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
               <iframe class="embed-responsive-item" 
               src="https://www.youtube.com/embed/FZchw6Kx2Oo?rel=0"
               allowfullscreen></iframe>
@@ -278,7 +313,7 @@
       <div class="row">
         <h1 id="photos" class="col-sm-2">Photos</h1>
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/fnl.jpg" class="card-img-top" alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">Friday Night Lights</h5>
@@ -291,7 +326,7 @@
         
 
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/norlin.jpg" alt="Leeds School of Business" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Leeds</h5>
@@ -301,7 +336,7 @@
         <div class="w-100"><br></div>
         <div class="col-sm-2"></div>
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/zed.jpg" alt="Zed's Dead" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Zed's Dead</h5>
@@ -309,7 +344,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card bg-dark align-items-center text-center">
+          <div class="card bg-light align-items-center text-center">
             <img src="assets/img/walk.jpg" alt="Snowy Campus" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Snow</h5>
@@ -342,6 +377,7 @@
 
   <script src="assets/js/jquery.slim.min.js"></script>
   <script type="module" src="assets/js/starter.js"></script>
+  <script  src="assets/js/bg_globe.js"></script>
 </body>
 
 </html>
