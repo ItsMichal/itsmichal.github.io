@@ -11,16 +11,13 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/grid.js"></script> -->
   <script src="assets/js/three.js"></script>
-  
+
   <meta property="og:title" content="Michal Bodzianowski">
   <meta property="og:description"
-        content="Michal Bodzianowski is a Full-Stack Developer that is Innovating Interactions and Connections With Technology. Specializing in Web Dev, Python, and Visual Design.">
-  <meta property="og:image"
-        content="http://michal.us/assets/img/social.png">
-  <meta property="og:image:secure_url"
-        content="https://michal.us/assets/img/social.png">
-  <meta property="og:url"
-        content="https://michal.us/">
+    content="Michal Bodzianowski is a Full-Stack Developer that is Innovating Interactions and Connections With Technology. Specializing in Web Dev, Python, and Visual Design.">
+  <meta property="og:image" content="http://michal.us/assets/img/social.png">
+  <meta property="og:image:secure_url" content="https://michal.us/assets/img/social.png">
+  <meta property="og:url" content="https://michal.us/">
   <meta property="og:type" content="profile">
   <meta property="og:profile:first_name" content="Michal">
   <meta property="og:profile:last_name" content="Bodzianowski">
@@ -28,16 +25,14 @@
   <meta property="og:profile:gender" content="male">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:site:id" content="@ItsMichal">
-  <meta property="twitter:image"
-        content="http://michal.us/assets/img/social.png">
-  <meta property="twitter:image:alt"
-        content="Michal Bodzianowski's Website">
+  <meta property="twitter:image" content="http://michal.us/assets/img/social.png">
+  <meta property="twitter:image:alt" content="Michal Bodzianowski's Website">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX5B1WES16"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-NX5B1WES16');
@@ -46,7 +41,7 @@
 </head>
 
 <body>
-  
+
 
   <!--Main Navigation-->
   <header class="container">
@@ -57,7 +52,7 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
@@ -72,21 +67,27 @@
 
     <!-- Globe BG -->
     <div id="globe"></div>
-
-    <div class="p-5 text-wrap header-jumbotron">
+    <div class="p-5 text-wrap header-jumbotron pb-0">
+      
       <h1 class="display-1 b"><b>Michal Bodzianowski</b></h1>
       <p class="display-4 head-text">Innovating Interactions and Connections With Technology</p>
       <img class="d-lg-none img-fluid" alt="Michal Bodzianowski" src="assets/img/me.png">
     </div>
-    <hr>
+    <hr class="mt-0">
     <div class="container text-center">
-      <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i> GitHub</a>
-      <a class="btn btn-link" target="_blank" href="http://linkedin.com/in/mbodzianowski/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i> Soundcloud</a>
-      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i> Twitter</a>
-      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i>
+        GitHub</a>
+      <a class="btn btn-link" target="_blank" href="http://linkedin.com/in/mbodzianowski/"><i
+          class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i>
+        Soundcloud</a>
+      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i>
+        Twitter</a>
+      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i>
+        Instagram</a>
       <a class="btn btn-link" target="_blank" href="https://twitch.tv/Halmiccc"><i class="fab fa-twitch"></i> Twitch</a>
-      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i> me@michal.us</a>
+      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i>
+        me@michal.us</a>
     </div>
     <hr>
   </header>
@@ -118,39 +119,84 @@
       <hr>
       <div class="row">
         <h1 id="projects" class="col-sm-2">Projects</h1>
-
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
-            <video class="video-fluid card-img-top" autoplay loop muted>
-              <source src="assets/media/map.mp4" type="video/mp4" />
-            </video>
-            <div class="card-body">
-              <h5 class="card-title">SHINE Lab - Maps Experiment <small>2020 - Present</small></h5>
-              <p class="card-text">Working on experiments that involve optimizing and easing the processes of human-computer interaction and the psychology behind it. Using python, flask, folium, websockets, AWS (DynamoDB and S3), and Heroku to develop a web-based experiment involving real-time communication and collaboration. Responsible for working with experiment designers to create a functional and useful testbed according to specifications.</p>
+          <div class="card  border-light align-items-center text-center">
+            <div class="ratio ratio-16x9">
+              <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/YaHhRhEKA_I"
+                allowfullscreen></iframe>
+            </div>
 
+            <div class="card-body">
+              <h5 class="card-title">Grocerybot/Roboshopper 3000 <small>2021</small></h5>
+              <p class="card-text">
+                Grocerybot is a proof-of-concept robot that utilizes inverse kinematics, object recognition, path planning and finding, and web server communication.
+                It receives a shopping list from a web app and autonmously navigates a standard grocery store, collecting specific items from a list and returning to checkout once done. 
+                This is our final project submission for the Spring 2021 session of CSCI 3302 - Intro to Robotics at CU Boulder. This is a proof of concept, so please treat it as such, and thank you!
+              </p>
+              <a class="btn btn-primary" target="_blank" href="https://github.com/ItsMichal/Grocerybot">Github
+                Link</a>
             </div>
           </div>
         </div>
         <div class="w-100"><br></div>
         <div class="col-sm-2">2021</div>
+        
+        <div class="col-sm-6">
+          <div class="card  border-light align-items-center text-center">
+            <video class="video-fluid card-img-top" autoplay loop muted>
+              <source src="assets/media/map.mp4" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">SHINE Lab - Maps Experiment <small>2020 - Present</small></h5>
+              <p class="card-text">Working on experiments that involve optimizing and easing the processes of
+                human-computer interaction and the psychology behind it. Using python, flask, folium, websockets, AWS
+                (DynamoDB and S3), and Heroku to develop a web-based experiment involving real-time communication and
+                collaboration. Responsible for working with experiment designers to create a functional and useful
+                testbed according to specifications.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card text-secondary align-items-center text-center">
+            <img src="assets/img/aperture.png" class="card-img-top"
+              alt="APERTURE">
+            <div class="card-body">
+              <h5 class="card-title">SHINE Lab - APERTURE Experiment <small>2021 - Present</small></h5>
+              <p class="card-text">Unity-based experiment. This experiment tests how people work under specific distractors and conditions. Working on maintenence and cleaning up previous code in C#, using libraries such as LabStreamingLayer. Future work will start soon in collaboration with the Colorado School of Mines.</p>
+              <a class="btn btn-primary" target="_blank" href="https://github.com/ItsMichal/2D_Sort_Task/wiki">Github
+                Link</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-100"><br></div>
+        <div class="col-sm-2">2021</div>
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
-            <img src="assets/img/playsafe.PNG" class="card-img-top" style="width: 24em; padding-top: 10px;" alt="PlaySafe">
+          <div class="card text-secondary align-items-center text-center">
+            <img src="assets/img/playsafe.PNG" class="card-img-top" style="width: 24em; padding-top: 10px;"
+              alt="PlaySafe">
             <div class="card-body">
               <h5 class="card-title">HackCU 2021 - PlaySafe! <small>2021</small></h5>
-              <p class="card-text">A fully-functioning Figma prototyping aiming to solve a timely problem (socialization between vaccinated friends) with a clean UI/UX. Done in around 3.5 hours on a laptop- wish I had the time to make it a proper app demo using Flutter :)
+              <p class="card-text">A fully-functioning Figma prototyping aiming to solve a timely problem (socialization
+                between vaccinated friends) with a clean UI/UX. Done in around 3.5 hours on a laptop- wish I had the
+                time to make it a proper app demo using Flutter :)
               </p>
-              <a class="btn btn-primary" target="_blank" href="https://devpost.com/software/playsafe-rwsxqh">Devpost Link</a>
-              <a class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/ysP5AWX37W9krzzStFFGQW/PlaySafe?node-id=1%3A14714&scaling=scale-down">Live Demo</a>
+              <a class="btn btn-primary" target="_blank" href="https://devpost.com/software/playsafe-rwsxqh">Devpost
+                Link</a>
+              <a class="btn btn-primary" target="_blank"
+                href="https://www.figma.com/proto/ysP5AWX37W9krzzStFFGQW/PlaySafe?node-id=1%3A14714&scaling=scale-down">Live
+                Demo</a>
 
             </div>
           </div>
         </div>
 
         <!-- Sea of Thoughts -->
-        <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+        <div class="col-sm-6">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/sot.png" class="card-img-top" style="width: 16em" alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">HackMIT 2020 - Sea of Thoughts <small>2020</small></h5>
@@ -158,28 +204,33 @@
                 A web application used to connect with people through small messages in a bottle. Throw your thoughts
                 out to sea, and let someone read them and get connected with you. A novel way of mixing meditation,
                 writing, and connection.</p>
-              <a class="btn btn-primary" target="_blank" href="https://github.com/ItsMichal/sea-of-thoughts">Github Repo</a>
+              <a class="btn btn-primary" target="_blank" href="https://github.com/ItsMichal/sea-of-thoughts">Github
+                Repo</a>
               <a class="btn btn-primary" target="_blank" href="https://sea-of-thoughts.herokuapp.com/">Live Demo</a>
 
             </div>
           </div>
         </div>
 
-        
+
         <div class="w-100"><br></div>
         <div class="col-sm-2"></div>
 
         <!-- Doki Doki CU Story -->
-        <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+        <div class="col-sm-6">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/taco.png" class="card-img-top" alt="Taco Neko">
             <div class="card-body">
               <h5 class="card-title">TacoNeko - GB Studio Game <small>2020</small></h5>
               <p class="card-text">
-                A game I made during ATLS1000 Design Foundations. Developed using Photoshop, Procreate, and GB Studio. Music from GB Studio. It's a small stealth/action game where you play as Suavez, a taquero trying to make tacos on an island infested by scary robot cats. Playable in browser. Please see Medium writeup for more info.
+                A game I made during ATLS1000 Design Foundations. Developed using Photoshop, Procreate, and GB Studio.
+                Music from GB Studio. It's a small stealth/action game where you play as Suavez, a taquero trying to
+                make tacos on an island infested by scary robot cats. Playable in browser. Please see Medium writeup for
+                more info.
               </p>
               <a class="btn btn-primary" target="_blank" href="https://halmic.itch.io/taco-neko">Play Game (Itch.io)</a>
-              <a class="btn btn-primary" target="_blank" href="https://medium.com/@halmic/taco-neko-development-5c1fb9e6372c">Medium.com Write-up</a>
+              <a class="btn btn-primary" target="_blank"
+                href="https://medium.com/@halmic/taco-neko-development-5c1fb9e6372c">Medium.com Write-up</a>
 
             </div>
           </div>
@@ -187,8 +238,9 @@
 
         <!-- Doki Doki CU Story -->
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
-            <img src="assets/img/dd.png" class="card-img-top" style="padding-top: 10px; width: 24em" alt="Sea of Thoughts">
+          <div class="card text-secondary align-items-center text-center">
+            <img src="assets/img/dd.png" class="card-img-top" style="padding-top: 10px; width: 24em"
+              alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">HackCU 2020 - Doki Doki CU Story <small>2020</small></h5>
               <p class="card-text">
@@ -196,50 +248,55 @@
                 for our school's annual hackathon. Featured a plotline involving CU Boulder mascots. Written in Unity.
               </p>
               <p class="small">
-                Please disregard the "Tests" on the project page- this was a Hackathon with a hard deadline and we can't change the answers now. Feel free to download the game from the Google Drive if you like!
+                Please disregard the "Tests" on the project page- this was a Hackathon with a hard deadline and we can't
+                change the answers now. Feel free to download the game from the Google Drive if you like!
               </p>
-              <a class="btn btn-primary" target="_blank" href="https://devpost.com/software/doki-doki-cu-story-e8nz37">Devpost Link</a>
+              <a class="btn btn-primary" target="_blank"
+                href="https://devpost.com/software/doki-doki-cu-story-e8nz37">Devpost Link</a>
             </div>
           </div>
         </div>
-        
+
         <div class="w-100"><br></div>
         <div class="col-sm-2">2020</div>
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
-            <img src="assets/img/ohisee.png" class="card-img-top"  alt="OhISee">
-           
+          <div class="card  border-light align-items-center text-center">
+            <img src="assets/img/ohisee.png" class="card-img-top" alt="OhISee">
+
             <div class="card-body">
               <h5 class="card-title">OhISee Twitch Bot <small>2018 - 2020</small></h5>
               <p class="card-text">
-                A Twitch.tv Chatbot run during Games Done Quick. Takes notes from users, stores them, and can even quiz them using said notes! Was ran on heroku, however it is currently unmaintained.
+                A Twitch.tv Chatbot run during Games Done Quick. Takes notes from users, stores them, and can even quiz
+                them using said notes! Was ran on heroku, however it is currently unmaintained.
 
-                It last ran for AGDQ 2020, on Trihex's "Poverty Chat" since the official Games Done Quick channel is subscriber mode only.
+                It last ran for AGDQ 2020, on Trihex's "Poverty Chat" since the official Games Done Quick channel is
+                subscriber mode only.
               </p>
-              <a class="btn btn-primary" href="https://github.com/ItsMichal/ohisee"  target="_blank">Github</a>
-              <a class="btn btn-primary"  target="_blank"
-                href="http://ohisee.herokuapp.com/">Live Notes Page</a>
+              <a class="btn btn-primary" href="https://github.com/ItsMichal/ohisee" target="_blank">Github</a>
+              <a class="btn btn-primary" target="_blank" href="http://ohisee.herokuapp.com/">Live Notes Page</a>
             </div>
           </div>
         </div>
 
-        
 
-        
+
+
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card text-secondary align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/qVEDjNc5Gmg?list=PLUtLZU4pik-OClTpNNyMUl1s4aB2DWvuY?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/qVEDjNc5Gmg?list=PLUtLZU4pik-OClTpNNyMUl1s4aB2DWvuY?rel=0"
+                allowfullscreen></iframe>
             </div>
-           
+
             <div class="card-body">
               <h5 class="card-title">Special Force 1 & 2 <small>2019</small></h5>
               <p class="card-text">
-                A satirical series of short films edited and filmed by me, including some friends for college. Logos made in Illustrator and Photoshop. Video edited in Premiere. Title theme (from part 2) written in Ableton Live. A fun project, not to be taken TOO seriously ;)
+                A satirical series of short films edited and filmed by me, including some friends for college. Logos
+                made in Illustrator and Photoshop. Video edited in Premiere. Title theme (from part 2) written in
+                Ableton Live. A fun project, not to be taken TOO seriously ;)
               </p>
             </div>
           </div>
@@ -249,42 +306,47 @@
         <div class="col-sm-2">2017</div>
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card text-secondary align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/VvHQItjiEzs?list=PLAzDHex22XQw1PDdFq6Iz-STj1VsJHldi?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/VvHQItjiEzs?list=PLAzDHex22XQw1PDdFq6Iz-STj1VsJHldi?rel=0"
+                allowfullscreen></iframe>
             </div>
-           
+
             <div class="card-body">
               <h5 class="card-title">Phoenix Rising Fangame <small>2017 - 2018</small></h5>
               <p class="card-text">
-                Worked as a developer in a QA role on an international team developing a fangame inspired by the Pokemon series. Worked using Ruby and RPG Maker XP to debug and write code for the game. Responsible for creating, designing, and implementing some quests and easter eggs as well.
+                Worked as a developer in a QA role on an international team developing a fangame inspired by the Pokemon
+                series. Worked using Ruby and RPG Maker XP to debug and write code for the game. Responsible for
+                creating, designing, and implementing some quests and easter eggs as well.
                 Game received over 100K downloads on its first week, and is still popular today.
               </p>
-              <a class="btn btn-primary"  target="_blank" href="https://www.reddit.com/r/pokemonphoenixrising/comments/8m5eew/phoenix_rising_demo_megathread/">Reddit link</a>
-              <a class="btn btn-primary"  target="_blank" href="http://www.mediafire.com/file/89qv8kl9wd07rbr/Phoenix_Rising_0.1.5.1.zip/file">Download link</a>
+              <a class="btn btn-primary" target="_blank"
+                href="https://www.reddit.com/r/pokemonphoenixrising/comments/8m5eew/phoenix_rising_demo_megathread/">Reddit
+                link</a>
+              <a class="btn btn-primary" target="_blank"
+                href="http://www.mediafire.com/file/89qv8kl9wd07rbr/Phoenix_Rising_0.1.5.1.zip/file">Download link</a>
             </div>
           </div>
         </div>
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/Pz79cKIJQhA?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pz79cKIJQhA?rel=0"
+                allowfullscreen></iframe>
             </div>
-           
+
             <div class="card-body">
               <h5 class="card-title">The kAIser <small>2017</small></h5>
               <p class="card-text">
                 The kAIser is an finished project which aims to create physical emulations of WW1-era historical
                 leaders, using technologies like Artificial Intelligence, to help students understand their personas
-                better. Worked with a team of students to make this a reality back in high school. Responsible for the backend and making everything flow smoothly.
+                better. Worked with a team of students to make this a reality back in high school. Responsible for the
+                backend and making everything flow smoothly.
               </p>
-              <a class="btn btn-primary" href="https://github.com/ItsMichal/pilsudski"  target="_blank">Github</a>
-              <a class="btn btn-primary"  target="_blank"
+              <a class="btn btn-primary" href="https://github.com/ItsMichal/pilsudski" target="_blank">Github</a>
+              <a class="btn btn-primary" target="_blank"
                 href="https://www.denverpost.com/2017/02/21/highlands-ranch-history-class-artificial-intelligence/">Denver
                 Post Link</a>
             </div>
@@ -292,21 +354,25 @@
         </div>
 
       </div>
-      
+
       <hr>
       <div class="row">
         <h1 id="clubs" class="col-sm-2">Clubs</h1>
-        
+
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/Cz48VC3mCtA?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Cz48VC3mCtA?rel=0"
+                allowfullscreen></iframe>
             </div>
             <div class="card-body">
               <h5 class="card-title">Blueprint Boulder - Vice President of Technology</h5>
-              <p class="card-text">Blueprint Boulder aims to connect students with non-profits that require technical solutions. As a former Skills Development Leader, I worked to ensure that Blueprint Boulder members receive the support they need to start contributing to projects and by extension to the local community. I am currently the Vice President of Technology, working to build a strong technical foundation for the organization. This includes consulting with non-profits and project teams and aiming to help them with their technical needs.</p>
+              <p class="card-text">Blueprint Boulder aims to connect students with non-profits that require technical
+                solutions. As a former Skills Development Leader, I worked to ensure that Blueprint Boulder members
+                receive the support they need to start contributing to projects and by extension to the local community.
+                I am currently the Vice President of Technology, working to build a strong technical foundation for the
+                organization. This includes consulting with non-profits and project teams and aiming to help them with
+                their technical needs.</p>
               <!-- <a class="btn btn-primary" target="_blank"
               href="https://cslesports.gg/player/71187">CSL Open League Profile</a>
               <a class="btn btn-primary" target="_blank"
@@ -314,42 +380,40 @@
             </div>
           </div>
         </div>
-        
+
         <div class="w-100"><br></div>
         <div class="col-sm-2"></div>
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/Eb0MtCTRKBI?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Eb0MtCTRKBI?rel=0"
+                allowfullscreen></iframe>
             </div>
             <div class="card-body">
               <h5 class="card-title">CU Esports - VALORANT Gold Team</h5>
-              <p class="card-text">Member of the VALORANT Gold Team, competing against other colleges in the competitive shooter developed by Riot Games.</p>
-              <a class="btn btn-primary" target="_blank"
-              href="https://cslesports.gg/player/71187">CSL Open League Profile</a>
-              <a class="btn btn-primary" target="_blank"
-              href="https://cugaming.gg/">CU Gaming/Esports</a>
+              <p class="card-text">Member of the VALORANT Gold Team, competing against other colleges in the competitive
+                shooter developed by Riot Games.</p>
+              <a class="btn btn-primary" target="_blank" href="https://cslesports.gg/player/71187">CSL Open League
+                Profile</a>
+              <a class="btn btn-primary" target="_blank" href="https://cugaming.gg/">CU Gaming/Esports</a>
             </div>
           </div>
         </div>
 
 
-        
+
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" 
-              src="https://www.youtube.com/embed/FZchw6Kx2Oo?rel=0"
-              allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2K-vCxZydfw?rel=0"
+                allowfullscreen></iframe>
             </div>
             <div class="card-body">
               <h5 class="card-title">CU Racing Team - Driver/Engineer</h5>
-              <p class="card-text">CU Boulder Racing Team Endurance member. Aspiring driver, marketer, and race engineer.</p>
-              <a class="btn btn-primary" target="_blank"
-                href="http://buffsracing.com">BuffsRacing.com</a>
+              <p class="card-text">CU Boulder Racing Team Endurance member. Aspiring driver, marketer, and race
+                engineer.</p>
+              <a class="btn btn-primary" target="_blank" href="http://buffsracing.com">BuffsRacing.com</a>
             </div>
           </div>
         </div>
@@ -359,7 +423,7 @@
       <div class="row">
         <h1 id="photos" class="col-sm-2">Photos</h1>
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/fnl.jpg" class="card-img-top" alt="Sea of Thoughts">
             <div class="card-body">
               <h5 class="card-title">Friday Night Lights</h5>
@@ -369,10 +433,10 @@
 
 
 
-        
+
 
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/norlin.jpg" alt="Leeds School of Business" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Leeds</h5>
@@ -382,7 +446,7 @@
         <div class="w-100"><br></div>
         <div class="col-sm-2"></div>
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/zed.jpg" alt="Zed's Dead" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Zed's Dead</h5>
@@ -390,7 +454,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card bg-light align-items-center text-center">
+          <div class="card  border-light align-items-center text-center">
             <img src="assets/img/walk.jpg" alt="Snowy Campus" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Snow</h5>
@@ -409,13 +473,19 @@
     <hr>
     <div class="container-fluid text-center">
       <p>Thank you for viewing my portfolio! Visit my other pages here.</p>
-      <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i> GitHub</a>
-      <a class="btn btn-link" target="_blank" href="http://linkedin.com/m/mbodzianowski"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i> Soundcloud</a>
-      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i> Twitter</a>
-      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a class="btn btn-link" target="_blank" href="http://github.com/ItsMichal"><i class="fab fa-github"></i>
+        GitHub</a>
+      <a class="btn btn-link" target="_blank" href="http://linkedin.com/m/mbodzianowski"><i
+          class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a class="btn btn-link" target="_blank" href="https://soundcloud.com/itshalmic"><i class="fab fa-soundcloud"></i>
+        Soundcloud</a>
+      <a class="btn btn-link" target="_blank" href="https://twitter.com/ItsMichal"><i class="fab fa-twitter"></i>
+        Twitter</a>
+      <a class="btn btn-link" target="_blank" href="https://www.instagram.com/halmicc/"><i class="fab fa-instagram"></i>
+        Instagram</a>
       <a class="btn btn-link" target="_blank" href="https://twitch.tv/Halmiccc"><i class="fab fa-twitch"></i> Twitch</a>
-      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i> me@michal.us</a>
+      <a class="btn btn-link" target="_blank" href="mailto:me@michal.us"><i class="far fa-envelope"></i>
+        me@michal.us</a>
     </div>
     <br>
   </footer>
@@ -423,7 +493,7 @@
 
   <script src="assets/js/jquery.slim.min.js"></script>
   <script type="module" src="assets/js/starter.js"></script>
-  <script  src="assets/js/bg_globe.js"></script>
+  <script src="assets/js/bg_globe.js"></script>
 </body>
 
 </html>

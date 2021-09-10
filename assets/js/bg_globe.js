@@ -1,6 +1,6 @@
 function init(points){
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color("#FCFCFC")
+    scene.background = new THREE.Color("#2B2D42")
     // let camera = new THREE.OrthographicCamera( 75, document.getElementById("globe").offsetWidth / document.getElementById("globe").offsetHeight, 0.1, 1000 );
     let camera = new THREE.PerspectiveCamera( 25, document.getElementById("globe").offsetWidth / document.getElementById("globe").offsetHeight, 0.1, 1000 );
 
@@ -57,7 +57,7 @@ var globe_map;
 window.fetch("../assets/js/points.json")
 .then(response => response.json())
   .then(data => {
-    loader.load('assets/img/earth.jpg', (texture)=>{
+    loader.load('assets/img/night_earth.jpg', (texture)=>{
         globe_map = texture;
         init(data.points);
     });

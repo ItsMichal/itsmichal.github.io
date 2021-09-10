@@ -37,17 +37,28 @@ $border-radius: .4rem;
 // ); //OLD
 $font-family-sans-serif: "Jost", sans-serif;
 
+// $theme-colors: (
+//   "primary":#2274A5,
+//   "secondary": #E6AF2E,
+//   "dark":#00171F,
+//   "light": #B8DBD9,
+//   "bg":  #FCFCFC//#f7eeee//#F4F4F9
+// );
+
+
 $theme-colors: (
-  "primary":#2274A5,
-  "secondary": #E6AF2E,
-  "dark":#00171F,
-  "light": #B8DBD9,
-  "bg":  #FCFCFC//#f7eeee//#F4F4F9
+  "primary":#D90429,
+  "secondary": #8D99AE,
+  "dark":#EDF2F4,
+  "light": #EF233C,
+  "bg":  #2B2D42//#f7eeee//#F4F4F9
 );
+$body-color: map-get($theme-colors, "dark");
 $navbar-dark-color: map-get($theme-colors, "dark");
 $navbar-dark-brand-color: map-get($theme-colors, "dark");
 $jumbotron-bg: map-get($theme-colors, "bg");
 $body-bg: map-get($theme-colors, "bg");
+$card-bg: map-get($theme-colors, "bg");
 
 //test?
 //
