@@ -1,3 +1,5 @@
 node_modules
 assets/css/*
 public
+assets/css/starter.css
+assets/css/starter.css.map
