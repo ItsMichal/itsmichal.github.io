@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
-    "build": "npm run css && cp -R . ~/tmp/build && cp -R ~/tmp/build public && rm -r public/{scss,package.json,package-lock.json,README.md,.gitignore}",
+    "build": "npm run css && mkdir -p ~/tmp/build && cp -R . ~/tmp/build && cp -R ~/tmp/build public && rm -r public/{scss,package.json,package-lock.json,README.md,.gitignore}",
     "css-compile": "npx sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
     "neo-compile": "npx sass scss:assets/css/ --load-path=node_modules --style=compressed",
     "css-prefix": "npx postcss --replace assets/css/starter.css --use autoprefixer --map",
