@@ -11,11 +11,12 @@
   },
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
-    "build": "npm run css",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
-    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
+    "build": "npm run css && cp -R . public && rm -r public/{scss,package.json,package-lock.json,README.md,.gitignore}",
+    "css-compile": "npx sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "neo-compile": "npx sass scss:assets/css/ --load-path=node_modules --style=compressed",
+    "css-prefix": "npx postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css-purge": "purgecss --css assets/css/starter.css --content index.html --output assets/css/",
-    "css": "npm run css-compile && npm run css-prefix",
+    "css": "npm run neo-compile && npm run css-prefix",
     "server": "serve --listen 80",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm run css"
@@ -34,11 +35,12 @@
     "bootstrap": "^5.1.1",
     "bootstrap-icons": "^1.5.0",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "node-gyp": "^9.4.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.64.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
-    "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
